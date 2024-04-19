@@ -1,6 +1,8 @@
 # BlueDucky
 Pentesting Bluetooth
 
+read the owner at https://github.com/pentestfunctions/BlueDucky/tree/main
+
 <p align="center">
   <img src="./images/duckmenu.png">
 </p>
