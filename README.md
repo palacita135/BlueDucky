@@ -97,3 +97,13 @@ STRING hackertyper.net
 DELAY 300
 ENTER
 DELAY 300
+
+
+If there got any problems:
+move the menu_functions, magic_keyboard_hid and registered_device frome utils folder to the main folder.
+open menu_functions.py line 7 and 8 delete utils.
+
+n general you can check with journalctl in Terminal for Errors and get a hint what to look for. Difficult to say.
+Try running these in terminal to see if it will wake your bluetooth up:
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
