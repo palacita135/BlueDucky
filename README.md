@@ -61,7 +61,7 @@ or
 git clone https://github.com/palacita135/BlueDucky.git
 
 cd BlueDucky
-pip install -r requirments.txt <if failed use "--break-system-packages">
+pip install -r requirements.txt <if failed use "--break-system-packages">
 sudo hciconfig hci0 up
 python3 BlueDucky.py
 ```
